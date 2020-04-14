@@ -1,26 +1,21 @@
+/* eslint react/prop-types: 0 */
+import { Router } from '@reach/router';
+import RoutedView from './Components/RoutedView';
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Sets } from './Pages/Sets';
+import { Users } from './Pages/Users';
 
 const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    const mainHeader = 'Управление пользователями системы "Прогноз"';
+    return (
+        <Router>
+            <RoutedView path="/" name={mainHeader}>
+                <Users path="/users" />
+                <Sets path="/sets" />
+            </RoutedView>
+        </Router>
+    );
+};
 
-export default App;
+export { App };

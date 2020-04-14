@@ -1,38 +1,93 @@
+body {
+  margin:0px; padding:0px;
+  background-color:#f1eeec;
+}
 .App {
   text-align: center;
+  background-color:#a7a4a3;
+}
+section {
+  background-color:#c4c0be;
+  background-image:url(./img/background_light.jpg);
+  background-repeat:repeat-x;
+  min-height:400px;
+}
+footer {
+  background-image:url(./img/background_footer.jpg);
+  background-repeat:repeat-x;
+  color:rgb(223, 215, 215);
+  padding:40px;
+}
+.container {
+  margin:0 auto;
+  position:relative;
+}
+#hd-main {
+  height: 40px;
+}
+#header {
+  padding-top:10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#logo h1, #logo small {
+  margin:0px;
+  display:block;
+  text-indent:-9999px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#logo {
+  background-image:url(./img/logo.jpg);
+  background-repeat:no-repeat;
+  width:50px;
+  height:50px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ul#menu {
+  margin:0px; padding:0px;
+  position:absolute;
+  right:0px;
 }
-
-.App-link {
-  color: #61dafb;
+ul#menu li {
+  display:inline;
+  margin-left:12px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul#menu li a {
+  text-decoration:none;
+  color:#716d6a;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  font-size:10px;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+ul#menu li a.active, ul#menu li a:hover {
+  color:#421717;
+}
+#main-header {
+  font-size:18px;
+  font-weight:bold;
+  padding-top:12px;
+}
+html {
+  font-size: .8rem;
+}
+ul#tbl-panel {
+  margin:0px; padding:0px;
+  position:absolute;
+  right:0px;
+}
+ul#tbl-panel li {
+  display:inline;
+  margin-left:8px;
+}
+ul#tbl-panel li a {
+  text-decoration:none;
+  color:#353231;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  font-size:10px; 
+}
+ul#tbl-panel li a.active, ul#tbl-panel li a:hover {
+  color:#421717;
+  background-color:#c3dcf7;
+}
+#tr-marked {
+  color: #212529;
+  background-color: rgba(240, 92, 104, 0.5);
 }
