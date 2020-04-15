@@ -1,0 +1,41 @@
+
+$table-active-bg: #d9e7f0;
+$table-border-color: rgb(112, 109, 109);
+
+// Custom.scss
+//   весь Bootstrap
+@import "bootstrap/bootstrap.scss";
+
+// или Bootstrap частями
+// Требуемое
+//@import "node_modules/bootstrap/scss/functions";
+//@import "node_modules/bootstrap/scss/variables";
+//@import "node_modules/bootstrap/scss/mixins";
+
+// Опциональное
+//@import "node_modules/bootstrap/scss/reboot";
+//@import "node_modules/bootstrap/scss/type";
+//@import "node_modules/bootstrap/scss/images";
+//@import "node_modules/bootstrap/scss/code";
+//@import "node_modules/bootstrap/scss/grid";
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255);
+}
+.table-hover tbody tr:hover {
+    color: #212529;
+    background-color: rgba(55, 106, 184, 0.5);
+}
+.table thead th {
+      vertical-align: top;
+}
+.panel-body {
+    margin-bottom: 5px;
+    background-color: rgba(176, 206, 240, 0.5);
+}
+
+
+.table tbody tr.marked {
+    color: #212529;
+    background-color: rgba(240, 92, 104, 0.5);
+}
